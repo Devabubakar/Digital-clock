@@ -8,6 +8,8 @@ function setTime(){
     m=checkTime(m);
     s=checkTime(s)
 
+    var t =setTimeout(setTime,500);
+
     document.getElementById("words").innerHTML =
     h + ":" + m + ":"+ s;
     document.getElementById("d").innerHTML = 
